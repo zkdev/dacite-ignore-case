@@ -8,7 +8,7 @@ setuptools.setup(
     author='zkdev',
     author_email='dev@zeekay.dev',
     project_urls={
-        "Bug Tracker": "https://github.com/zkdev/dacite-ignorecase/issues",
+        "Bug Tracker": "https://github.com/zkdev/dacite-ignore-case/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
