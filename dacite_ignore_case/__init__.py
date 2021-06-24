@@ -5,7 +5,7 @@ from dacite.dataclasses import Field, _FIELDS, _FIELD, _FIELD_INITVAR
 T = typing.TypeVar("T", bound=typing.Any)
 
 
-def from_dict_ignore_case(data_class, data):
+def from_dict(data_class, data):
 
     def get_fields(data_class: typing.Type[T]) -> typing.List[Field]:
         fields = getattr(data_class, _FIELDS)
