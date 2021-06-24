@@ -5,23 +5,19 @@ import setuptools
 
 own_dir = os.path.abspath(os.path.dirname(__file__))
 
-
-def readme():
-    with open(os.path.join(own_dir, 'README.md')) as f:
-        for line in f.readlines():
-            line = line.strip()
-            yield line
-
+with open(os.path.join(own_dir, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name='dacite_ignore_case',
-    version='0.0.2',
+    version='1.0.0',
     description='Extends dacite.from_dict with a ignore case function',
     author='zkdev',
     author_email='dev@zeekay.dev',
-    long_description = readme(),
+    long_description = long_description,
     long_description_content_type = 'text/markdown',
     project_urls={
+        'Homepage': 'https://github.com/zkdev/dacite-ignore-case',
         'Bug Tracker': 'https://github.com/zkdev/dacite-ignore-case/issues',
     },
     classifiers=[
