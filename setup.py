@@ -10,7 +10,7 @@ with open(os.path.join(own_dir, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name='dacite_ignore_case',
-    version='1.0.0',
+    version='1.0.1',
     description='Extends dacite.from_dict with a ignore case function',
     author='zkdev',
     author_email='dev@zeekay.dev',
@@ -30,6 +30,5 @@ setuptools.setup(
     ],
     license='MIT',
     python_requires='>=3.9.*',
-    package_dir={'': 'dacite_ignore_case'},
-    packages=setuptools.find_packages(where='dacite_ignore_case'),
+    packages=['dacite_ignore_case'],
 )
